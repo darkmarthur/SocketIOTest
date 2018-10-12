@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chat Socket.IO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+    <div id="chat-container" class="container">
+        <h1>
+            HOLI Chat
+        </h1>
+        <div id="chat-windows">
+            <div class="row">
+                <input id="username" class="col s6 input-field" type="text" placeholder="Username">
+                <button id="send" class="col s6 waves-effect waves-light btn">
+                    Send
+                    <i class="material-icons right" style="color: #fff"></i>
+                </button>
+            </div>
+            <div class="row">
+                <input type="text" id="message" class="col s12 input-field" placeholder="Message">
+            </div>
+            <div id="actions"></div>
+            <div id="output" class="card-panel"></div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+
+</html>
